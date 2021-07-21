@@ -18,7 +18,7 @@ const ReactionSchema = new Schema({
     type: Date,
     default: Date.now,
   },
-})
+});
 
 const ThoughtSchema = new Schema({
   thoughtText: {
@@ -28,6 +28,10 @@ const ThoughtSchema = new Schema({
     trim: true,
     required: true,
   },
+  username: {
+    type: String,
+    required: true,
+  },  
   createdAt: {
     type: Date,
     default: Date.now,
